@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container{
+   /* flex-direction: column;
+    display: flex;
+    background-color: #f4f4f4;
+    justify-content: space-between;  Always is on the main axis */
+    /* align-items: center;  Always is on the cross axis */
+     /* flex-wrap: wrap; */
+     display: flex;
+}
+
+.item{
+   flex:1;
+  /* width: 100px; */
+  height: 100px;
+  background: #254de4;
+  color: #fff;
+  margin :10px;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-of-type(1){
+    /* align-self: start;
+    order: 3; 
+    flex-grow: 1;
+    flex-shrink: 1;*/
+}
+.item:nth-of-type(2){
+    /* align-self: center;
+    order: 1; 
+    flex-basis: 200px;
+    flex-grow: 2;
+    flex-shrink: 2;*/
+}
+.item:nth-of-type(3){
+    /* align-self: end;
+    order: 2; 
+    flex-grow: 1;
+    flex-shrink:3;*/
+}
